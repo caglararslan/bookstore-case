@@ -2,7 +2,6 @@ import { React,useEffect, useState, useContext } from 'react';
 import axios from 'axios';
 import Card from '../components/Card';
 import ThemeContext from "../context/ThemeContext"
-import { BsBasket3 } from "react-icons/bs";
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 
@@ -71,7 +70,7 @@ function Home() {
                     ))}  
                 </div>  
             </div>
-            <button className="modal-button" onClick={openModal}><BsBasket3 /></button>
+            <button className="modal-button" onClick={openModal}>SVG</button>
             <Modal
                 isOpen={modalIsOpen}
                 onAfterOpen={afterOpenModal}
