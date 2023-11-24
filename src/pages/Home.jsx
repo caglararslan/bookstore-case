@@ -70,7 +70,7 @@ function Home() {
                     ))}  
                 </div>  
             </div>
-            <button className="modal-button" onClick={openModal}>SVG</button>
+            <button className="modal-button" onClick={openModal}>Aç</button>
             <Modal
                 isOpen={modalIsOpen}
                 onAfterOpen={afterOpenModal}
