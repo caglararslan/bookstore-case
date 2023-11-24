@@ -1,4 +1,5 @@
 import {useContext} from 'react'
+import { FaShoppingBasket } from "react-icons/fa";
 import ThemeContext from "../context/ThemeContext";
 
 function Card({book}) {
@@ -16,7 +17,7 @@ function Card({book}) {
                 <div className="showcase-author">{book.volumeInfo.authors}</div>
                 <div className="showcase-title">{book.volumeInfo.title}</div>
                 <div className="showcase-button">
-                    <button onClick={addToBasket}>Add To Basket</button>
+                    <button onClick={addToBasket}>Add To Basket <FaShoppingBasket /></button>
                 </div>
             </div>
         </div>
